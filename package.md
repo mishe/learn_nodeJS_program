@@ -18,7 +18,7 @@ NodeJS定义了一个特殊的node_modules目录用于存放模块。例如某�
 当使用require('foo/bar')的方式加载模块时，则NodeJS依次尝试以下路径。
 
 * /home/user/lib/foo/bar
-*  /home/lib/foo/bar
+* /home/lib/foo/bar
 
 # 包（package）
 
@@ -66,12 +66,12 @@ package.json
 
 - /home/user/lib/
     - cat/
-        + doc/
+        - doc/
         - lib/
            - head.js
            - body.js
            - main.js
-        + tests/
+        - tests/
         - package.json
 
 其中package.json内容如下。
