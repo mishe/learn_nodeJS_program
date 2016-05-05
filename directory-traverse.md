@@ -10,16 +10,13 @@ function traverse(dir){
         if (err) {
             console.log(dir,err)
         } else {
-            //console.log(files)
             files.forEach(function (file) {
                 fs.stat(path.join(dir,file), function (err, state) {
                     if (err) {
                         console.log(err)
                     } else {
-
                         if(state.isDirectory()){
                             traverse(path.join(dir,file));
-                            //traverse(dir+file)
                         }else if(state.isFile()){
                             console.log(path.resolve(path.join(dir,file)))
                         }
